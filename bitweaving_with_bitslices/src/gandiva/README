@@ -1,0 +1,7 @@
+Please install Apache Arrow & build locally, as this file requires dynamic linking with libgandiva.so.
+
+Please replace the existing gandiva-boolean-expr-test.cc with this one.
+
+Compile this file using 'make gandiva-boolean-expr-test'
+
+It will be created in a directory named 'release' in the release directory chosen by a user.

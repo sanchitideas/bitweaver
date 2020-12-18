@@ -1,0 +1,15 @@
+
+1. Please use the python scripts to create coded files for each column.
+
+2. Then please use create_bitslices.cc to convert those files into the 
+BitWeaving/V storage format with bit-group size 1 (which are just like bit-slices, 
+but are cleverly loaded into memory to minimize cache-contention).
+
+3. Then please use bitweaving_v_test.cc to specify the filenames & conditions 
+to check by creating a BitWeaver object.
+
+4. Please compile your code by running make.
+Subsequently, if your computer has multiple sockets,
+please use numactl to run the executable by binding it to memory 
+modules physically attached to one of the sockets.
+For example, use numactl --membind=1 <executable-name>
